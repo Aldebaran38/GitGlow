@@ -1,0 +1,37 @@
+/* CSS Variable overrides to style the calendar, tooltips, and legends uniformly */
+:root,
+html,
+body,
+[data-color-mode] {
+  --color-calendar-graph-day-L1-bg: #a855f7 !important;
+  --color-calendar-graph-day-L2-bg: #3b82f6 !important;
+  --color-calendar-graph-day-L3-bg: #fbbf24 !important;
+  --color-calendar-graph-day-L4-bg: #10b981 !important;
+  
+  /* Fallbacks for older theme versions */
+  --color-calendar-graph-day-L1-border: rgba(0,0,0,0.05) !important;
+  --color-calendar-graph-day-L2-border: rgba(0,0,0,0.05) !important;
+  --color-calendar-graph-day-L3-border: rgba(0,0,0,0.05) !important;
+  --color-calendar-graph-day-L4-border: rgba(0,0,0,0.05) !important;
+}
+
+/* Direct element level styling (SVG <rect> & HTML element fallbacks) */
+[data-level="1"] {
+  fill: #a855f7 !important;
+  background-color: #a855f7 !important;
+}
+
+[data-level="2"] {
+  fill: #3b82f6 !important;
+  background-color: #3b82f6 !important;
+}
+
+[data-level="3"] {
+  fill: #fbbf24 !important;
+  background-color: #fbbf24 !important;
+}
+
+[data-level="4"] {
+  fill: #10b981 !important;
+  background-color: #10b981 !important;
+}
