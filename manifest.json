@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "GitHub Cool Contribution Colors",
+  "name": "GitGlow",
   "version": "1.0",
   "description": "Changes the contribution calendar colors on github.com to purple, blue, yellow, and green.",
   "permissions": [],
