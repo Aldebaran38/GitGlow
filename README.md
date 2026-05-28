@@ -45,14 +45,4 @@ Since **GitGlow** is a custom developer extension, you can load it directly into
 
 ---
 
-## 🛠️ Built With
 
-- **HTML / CSS**: Pure, performant CSS variable override engine.
-- **JavaScript**: Minimal MV3 content scripts.
-- **Manifest V3**: Compliant with the latest Google Chrome extension security and performance standards.
-
----
-
-<p align="center">
-  Made with 💖 to make your developer achievements shine.
-</p>
