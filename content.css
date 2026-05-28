@@ -1,37 +1,57 @@
-/* CSS Variable overrides to style the calendar, tooltips, and legends uniformly */
-:root,
-html,
-body,
-[data-color-mode] {
-  --color-calendar-graph-day-L1-bg: #a855f7 !important;
-  --color-calendar-graph-day-L2-bg: #3b82f6 !important;
-  --color-calendar-graph-day-L3-bg: #fbbf24 !important;
-  --color-calendar-graph-day-L4-bg: #10b981 !important;
-  
-  /* Fallbacks for older theme versions */
+/* CSS Variable definitions for GitGlow themes */
+
+/* Theme: Colorful */
+html[data-gitglow-theme="colorful"] {
+  --gitglow-color-L1: #a855f7;
+  --gitglow-color-L2: #3b82f6;
+  --gitglow-color-L3: #fbbf24;
+  --gitglow-color-L4: #10b981;
+}
+
+/* Theme: All Green (Vibrant Uniform Saturated Light Green) */
+html[data-gitglow-theme="green"] {
+  --gitglow-color-L1: #39d353;
+  --gitglow-color-L2: #39d353;
+  --gitglow-color-L3: #39d353;
+  --gitglow-color-L4: #39d353;
+}
+
+/* Apply CSS Variables globally to GitHub's contribution fields ONLY when customized */
+html[data-gitglow-theme="colorful"],
+html[data-gitglow-theme="green"] {
+  --color-calendar-graph-day-L1-bg: var(--gitglow-color-L1) !important;
+  --color-calendar-graph-day-L2-bg: var(--gitglow-color-L2) !important;
+  --color-calendar-graph-day-L3-bg: var(--gitglow-color-L3) !important;
+  --color-calendar-graph-day-L4-bg: var(--gitglow-color-L4) !important;
+
+  /* Common borders / fallbacks */
   --color-calendar-graph-day-L1-border: rgba(0,0,0,0.05) !important;
   --color-calendar-graph-day-L2-border: rgba(0,0,0,0.05) !important;
   --color-calendar-graph-day-L3-border: rgba(0,0,0,0.05) !important;
   --color-calendar-graph-day-L4-border: rgba(0,0,0,0.05) !important;
 }
 
-/* Direct element level styling (SVG <rect> & HTML element fallbacks) */
-[data-level="1"] {
-  fill: #a855f7 !important;
-  background-color: #a855f7 !important;
+/* Direct element level styling (SVG <rect> & HTML elements) ONLY when customized */
+html[data-gitglow-theme="colorful"] [data-level="1"],
+html[data-gitglow-theme="green"] [data-level="1"] {
+  fill: var(--gitglow-color-L1) !important;
+  background-color: var(--gitglow-color-L1) !important;
 }
 
-[data-level="2"] {
-  fill: #3b82f6 !important;
-  background-color: #3b82f6 !important;
+html[data-gitglow-theme="colorful"] [data-level="2"],
+html[data-gitglow-theme="green"] [data-level="2"] {
+  fill: var(--gitglow-color-L2) !important;
+  background-color: var(--gitglow-color-L2) !important;
 }
 
-[data-level="3"] {
-  fill: #fbbf24 !important;
-  background-color: #fbbf24 !important;
+html[data-gitglow-theme="colorful"] [data-level="3"],
+html[data-gitglow-theme="green"] [data-level="3"] {
+  fill: var(--gitglow-color-L3) !important;
+  background-color: var(--gitglow-color-L3) !important;
 }
 
-[data-level="4"] {
-  fill: #10b981 !important;
-  background-color: #10b981 !important;
+html[data-gitglow-theme="colorful"] [data-level="4"],
+html[data-gitglow-theme="green"] [data-level="4"] {
+  fill: var(--gitglow-color-L4) !important;
+  background-color: var(--gitglow-color-L4) !important;
 }

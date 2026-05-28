@@ -3,7 +3,9 @@
   "name": "GitGlow",
   "version": "1.0",
   "description": "Changes the contribution calendar colors on github.com to purple, blue, yellow, and green.",
-  "permissions": [],
+  "permissions": [
+    "storage"
+  ],
   "content_scripts": [
     {
       "matches": [
@@ -25,7 +27,8 @@
       "32": "icon.png",
       "48": "icon.png",
       "128": "icon.png"
-    }
+    },
+    "default_popup": "popup.html"
   },
   "icons": {
     "16": "icon.png",
